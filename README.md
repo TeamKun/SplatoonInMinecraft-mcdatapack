@@ -1,1 +1,1 @@
-# Splatoon In Minecraft
+# SplatoonInMinecraft
