@@ -1,1 +1,1 @@
-tellraw @s ["",{"text":"[splatoon:log]","color":"gray"},{"text":" セットアップを実行しました。セットアップの詳細は\n"},{"text":"datapacks:splatoon in minecraft 1.0.0/data/splatoon/functions/setup","color":"yellow"},{"text":" から確認してください。"}]
+tellraw @s ["",{"text":"[splatoon]","color":"gray"},{"text":" セットアップを実行しました。セットアップの詳細は\n"},{"text":"datapacks:splatoon in minecraft 1.0.1/data/splatoon/functions/setup","color":"yellow"},{"text":" から確認してください。"}]

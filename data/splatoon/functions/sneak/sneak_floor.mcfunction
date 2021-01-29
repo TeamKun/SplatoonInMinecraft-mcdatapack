@@ -3,6 +3,6 @@ execute at @s[team=orange] run particle minecraft:block orange_concrete ~ ~1 ~ 0
 execute at @s run playsound minecraft:entity.player.swim master @s ~ ~ ~ 0.1
 effect give @s minecraft:invisibility 100000 0 true
 effect give @s minecraft:jump_boost 100000 1 true
-effect give @s minecraft:regeneration 100000 1 true
-effect give @s minecraft:speed 100000 15 true
+effect give @s minecraft:regeneration 100000 2 true
+effect give @s minecraft:speed 100000 20 true
 tag @s add splatoon.sneaked_floor
