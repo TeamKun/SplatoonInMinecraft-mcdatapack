@@ -1,0 +1,14 @@
+execute as @a[tag=splatoon.sneaked_floor] run clear @s minecraft:fishing_rod{display:{Name:"{\"text\":\"ink shooter (10)\"}"}}
+execute as @a[tag=splatoon.sneaked_wall] run clear @s minecraft:fishing_rod{display:{Name:"{\"text\":\"ink shooter (10)\"}"}}
+execute as @a[tag=!splatoon.sneaked_floor,tag=!splatoon.sneaked_wall,scores={role=2..}] unless entity @s[nbt={Inventory:[{id:"minecraft:fishing_rod",tag:{display:{Name:"{\"text\":\"ink shooter (10)\"}"}}}]}] run give @s minecraft:fishing_rod{display:{Name:"{\"text\":\"ink shooter (10)\"}"}}
+execute as @a[scores={role=2..,splatoon.ink=10..160}] at @s anchored eyes positioned ^ ^ ^ run tag @e[type=minecraft:fishing_bobber,tag=!splatoon.ink_shooter,distance=..1,sort=nearest,limit=1] add splatoon.ink_shooter
+execute as @a[team=blue,scores={role=2..}] at @s anchored eyes positioned ^ ^ ^ at @e[type=minecraft:fishing_bobber,tag=splatoon.ink_shooter,distance=..1,sort=nearest,limit=1] run summon minecraft:arrow ~ ~ ~ {Tags:["splatoon.motion_copy","splatoon.blue"],Team:"blue",Color:-1,life:1200s}
+execute as @a[team=red,scores={role=2..}] at @s anchored eyes positioned ^ ^ ^ at @e[type=minecraft:fishing_bobber,tag=splatoon.ink_shooter,distance=..1,sort=nearest,limit=1] run summon minecraft:arrow ~ ~ ~ {Tags:["splatoon.motion_copy","splatoon.red"],Team:"red",Color:-1,life:1200s}
+execute as @a[scores={role=2..}] at @s anchored eyes positioned ^ ^ ^ at @e[type=minecraft:fishing_bobber,tag=splatoon.ink_shooter,distance=..1,sort=nearest,limit=1] run scoreboard players remove @s splatoon.ink 10
+execute as @e[type=minecraft:fishing_bobber,tag=splatoon.ink_shooter] at @s store result entity @e[type=minecraft:arrow,tag=splatoon.motion_copy,sort=nearest,limit=1] Motion[0] double 0.0001 run data get entity @s Motion[0] 10000
+execute as @e[type=minecraft:fishing_bobber,tag=splatoon.ink_shooter] at @s store result entity @e[type=minecraft:arrow,tag=splatoon.motion_copy,sort=nearest,limit=1] Motion[1] double 0.0001 run data get entity @s Motion[1] 10000
+execute as @e[type=minecraft:fishing_bobber,tag=splatoon.ink_shooter] at @s store result entity @e[type=minecraft:arrow,tag=splatoon.motion_copy,sort=nearest,limit=1] Motion[2] double 0.0001 run data get entity @s Motion[2] 10000
+tag @e[type=minecraft:arrow,tag=splatoon.motion_copy] remove splatoon.motion_copy
+execute as @a[scores={role=2..}] at @s anchored eyes positioned ^ ^ ^ run kill @e[type=minecraft:fishing_bobber,distance=..1,sort=nearest,limit=1]
+execute at @e[type=arrow,tag=splatoon.blue] run particle minecraft:block blue_concrete ~ ~ ~ 0 0 0 0 3 normal @a
+execute at @e[type=arrow,tag=splatoon.red] run particle minecraft:block red_concrete ~ ~ ~ 0 0 0 0 3 normal @a

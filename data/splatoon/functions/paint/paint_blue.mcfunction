@@ -1,0 +1,14 @@
+fill ~-1 ~-1 ~-1 ~1 ~1 ~1 minecraft:blue_concrete replace #splatoon:paint_blue/to_blue_concrete
+fill ~-1 ~-1 ~-1 ~1 ~1 ~1 minecraft:blue_concrete_powder replace #splatoon:paint_blue/to_blue_concrete_powder
+fill ~-1 ~-1 ~-1 ~1 ~1 ~1 minecraft:blue_wool replace #splatoon:paint_blue/to_blue_wool
+fill ~-1 ~-1 ~-1 ~1 ~1 ~1 minecraft:purpur_slab[type=bottom] replace #splatoon:paint_blue/to_purpur_slab[type=bottom]
+fill ~-1 ~-1 ~-1 ~1 ~1 ~1 minecraft:purpur_slab[type=double] replace #splatoon:paint_blue/to_purpur_slab[type=double]
+fill ~-1 ~-1 ~-1 ~1 ~1 ~1 minecraft:purpur_slab[type=top] replace #splatoon:paint_blue/to_purpur_slab[type=top]
+fill ~-1 ~-1 ~-1 ~1 ~1 ~1 minecraft:purpur_stairs[facing=east,half=bottom] replace #splatoon:paint_blue/to_purpur_stairs[facing=east,half=bottom]
+fill ~-1 ~-1 ~-1 ~1 ~1 ~1 minecraft:purpur_stairs[facing=north,half=bottom] replace #splatoon:paint_blue/to_purpur_stairs[facing=north,half=bottom]
+fill ~-1 ~-1 ~-1 ~1 ~1 ~1 minecraft:purpur_stairs[facing=south,half=bottom] replace #splatoon:paint_blue/to_purpur_stairs[facing=south,half=bottom]
+fill ~-1 ~-1 ~-1 ~1 ~1 ~1 minecraft:purpur_stairs[facing=west,half=bottom] replace #splatoon:paint_blue/to_purpur_stairs[facing=west,half=bottom]
+fill ~-1 ~-1 ~-1 ~1 ~1 ~1 minecraft:purpur_stairs[facing=east,half=top] replace #splatoon:paint_blue/to_purpur_stairs[facing=east,half=top]
+fill ~-1 ~-1 ~-1 ~1 ~1 ~1 minecraft:purpur_stairs[facing=north,half=top] replace #splatoon:paint_blue/to_purpur_stairs[facing=north,half=top]
+fill ~-1 ~-1 ~-1 ~1 ~1 ~1 minecraft:purpur_stairs[facing=south,half=top] replace #splatoon:paint_blue/to_purpur_stairs[facing=south,half=top]
+fill ~-1 ~-1 ~-1 ~1 ~1 ~1 minecraft:purpur_stairs[facing=west,half=top] replace #splatoon:paint_blue/to_purpur_stairs[facing=west,half=top]
