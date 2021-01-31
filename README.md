@@ -1,5 +1,5 @@
 # SplatoonInMinecraft
-Slatoon in Minecraftはマインクラフトでスプラトゥーンを再現したデータパックです。
+Splatoon in Minecraftはマインクラフトでスプラトゥーンを再現したデータパックです。
 
 シューターでブロックを塗りつぶしたり、塗りつぶしたブロックに潜ることができます。
 
